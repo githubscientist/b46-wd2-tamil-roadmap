@@ -1,0 +1,1 @@
+// window and document objects
