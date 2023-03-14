@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Embedded Demo</title>
+
+        <style>
+            .box {
+                border: 1px solid black;
+                width: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>JavaScript Embedded Demo</h1>
+            <p class="box" id="box">This is a simple html page to show 
+                how javascript code runs in the 
+                frontend.</p>
+        </div>
+        <button id="change">Change Box Background</button><br /><br />
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="200px">
+
+        <script>
+            console.log('javascript works!');
+            let box = document.getElementById('box');
+            let colors = ['#0f0f0f', '#ff00ff', '#f0f0f0'];
+            let change = document.getElementById('change');
+            let i=0;
+            change.addEventListener('click', () => {
+                box.style.backgroundColor = colors[i%3];
+                i++;
+            });
+        </script>
+    </body>
+</html>
