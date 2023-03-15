@@ -2,31 +2,52 @@
 let myName = 'sathish';
 
 // 2. Declare a variable called 'myAge' and assign your age to it.
-
+let myAge = 25;
 
 // 3. Declare a variable called 'isStudent' and assign a boolean value('true' or 'false') to it, depending
 // on whether you are currently a student
-
+let isStudent = true;
 
 // 4. Declare a variable called 'myHobbies' and assign an array of your hobbies to it.
-
+let myHobbies = ['biking', 'singing', 'cooking', 'reading'];
+// console.log(myHobbies);
 
 
 // 5. declare a variable called 'myObject' and assign an object with several properties to it.
 // the properties should include your name, age and hobbies
+// let myObject = {
+//     name: 'sathish',
+//     age: 25,
+//     hobbies: ['biking', 'reading']
+// };
 
+// let myObject = {
+//     name: myName,
+//     age: myAge,
+//     hobbies: myHobbies
+// };
+
+let myObject = {
+    myName,
+    myAge,
+    myHobbies
+};
+
+console.log(myObject);
 
 
 // 6. Declare a variable called 'myString' and assign a string value 'Hello, World' to it.
 // you can use single quotes or double quotes to define a string
+let myString = 'Hello, World';
 
 
 
 // 7. Declare a variable called 'myNull' and assign the value 'null' to it.
-
+let myNull = null;
 
 
 // 8. Declare a variable called 'myUndefined' and do not assign any value to it.
+let myUndefined;
 
 
 // 9. Create a variable called myNumber and assign it a value of 10. 
