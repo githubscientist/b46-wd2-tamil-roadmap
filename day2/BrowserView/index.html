@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div>
+        <div id="firstdiv">
             <h1>JavaScript Embedded Demo</h1>
             <p class="box" id="box">This is a simple html page to show 
                 how javascript code runs in the 
@@ -31,6 +31,12 @@
                 box.style.backgroundColor = colors[i%3];
                 i++;
             });
+
+            let newParagraph = document.createElement('p');
+
+            newParagraph.textContent = 'The above box background will change when you click the button Change Box Background.';
+            
+            document.getElementById('firstdiv').appendChild(newParagraph);
         </script>
     </body>
 </html>

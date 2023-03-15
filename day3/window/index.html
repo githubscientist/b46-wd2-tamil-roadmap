@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window Object</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>Window Object Demonstration</h1>
+            <p>Window object is a global object in the browser's
+                Javascript runtime environment. It represents
+                the current browsing window or tab.
+            </p>
+            <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        </div>
+
+        <!-- Javascript code goes here -->
+        <script>
+            console.log(`innerHeight: ${window.innerHeight}`);
+            console.log(`innerWidth: ${window.innerWidth}`);
+            // console.log(window.document.body);
+            // window.alert("hello! I'm an alert");
+
+            let image = document.getElementById('google-logo');
+
+            setInterval(()=>{
+                if (window.innerWidth <= 300) {
+                    image.setAttribute('width', '100px');
+                } else {
+                    image.setAttribute('width', '500px');
+                }
+            }, 100);
+
+        </script>
+    </body>
+</html>
