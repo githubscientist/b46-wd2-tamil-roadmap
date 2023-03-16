@@ -64,3 +64,42 @@
 
 // using switch...case statements, check and print whether the number is a positive 
 // or negative or zero
+
+// let number = 0;
+
+// switch (true) {
+//     case number > 0:
+//         console.log(number, 'is a positive number');
+//         break;
+//     case number < 0:
+//         console.log(number, 'is a negative number');
+//         break;
+//     case number == 0:
+//         console.log(number, 'is a zero');
+//         break;
+// }
+
+// let number = -10;
+
+// switch (number > 0) {
+//     case true:
+//         console.log(number, 'is a positive number');
+//         break;
+//     case false:
+//         switch (number < 0) {
+//             case true:
+//                 console.log(number, 'is a negative number');
+//                 break;
+//             case false:
+//                 console.log(number, 'is a zero');
+//                 break;
+//         }
+//         break;
+// }
+
+// ternary operator or conditional operator
+// ? :
+
+let number = 10;
+
+number > 0 ? console.log(number, 'is a positive number') : number < 0 ? console.log(number, 'is a negative number') : console.log(number, 'is a zero');
