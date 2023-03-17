@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XMLHttpRequest</title>
+    </head>
+
+    <body>
+        <script>
+            // to create an object to XHR request
+            let xhr = new XMLHttpRequest();
+
+
+            // to set the request headers
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos', true);
+
+            // when the response received
+            xhr.onload = function () {
+                let todos = JSON.parse(this.responseText);
+                console.log(todos[0]);
+            };
+
+
+            // send the request
+            xhr.send();
+        </script>
+    </body>
+</html>
