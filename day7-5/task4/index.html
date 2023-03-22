@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+
+    <body>
+        <script>
+            // to create an object to XHR request
+            let xhr = new XMLHttpRequest();
+
+            // to set the request headers
+            xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+            // when the response received
+            xhr.onload = function () {
+                let response = JSON.parse(xhr.responseText);
+                for(let index=0; index<response.length; index++){
+                    console.log(response[index].flag);
+                }
+            };
+
+            // send the request
+            xhr.send();
+        </script>
+    </body>
+</html>
