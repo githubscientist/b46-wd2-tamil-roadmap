@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tasks</title>
+</head>
+
+<body>
+    <script>
+        // to create an object to XHR request
+        let xhr = new XMLHttpRequest();
+
+        // to set the request headers
+        xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+        // when the response received
+        xhr.onload = function () {
+            let array = JSON.parse(xhr.responseText);
+
+            // console.log();
+
+            let currencies = array.filter((value) => value.currencies);
+
+            console.log(currencies.filter(country => Object.keys(country.currencies).includes('USD')).map(country => country.name.common));
+            // console.log(array.filter((value) => value.continents.includes('Asia')).map((value) => value.name.common));
+            // console.log(array);
+            // let currencies = array.map((value) => value.currencies);
+            // console.log(Object.keys(currencies[0]).includes('GTQ'));
+            // currencies.filter((value) => {
+            //     console.log(Object.keys(value));
+            // });
+            // console.log(currencies);
+            // console.log();
+            // for(let object of currencies){
+            //     console.log(Object.keys(object));
+            // }
+            // currencies = currencies.filter(value => value != undefined);
+
+            // currencies.filter((value) => Object.keys(value).includes('GTQ'));
+            // console.log()
+
+            // console.log(currencies.map((value) => Object.keys(value).join(' ')).filter(currency => currency == 'USD'));
+        };
+
+        xhr.send();
+    </script>
+</body>
+
+</html>
