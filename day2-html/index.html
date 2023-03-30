@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Demo</title>
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    
+        <style>
+            /* Internal Style Sheet */
+            #secondList {
+                color: deeppink;
+            }
+
+        </style>
+        <link rel="stylesheet"
+            type="text/css"
+            href="https://github.com/githubscientist/css-demo/raw/main/style.css">
+    </head>
+
+    <body>
+        <h3 style="color: #bb86fc;">CSS Demo</h3>
+        <ul>
+            <li>Ways to use CSS</li>
+            <ul>
+                <li>External</li>
+                <li>Internal</li>
+                <li style="color:coral">Inline</li>
+            </ul>
+            <li>selectors</li>
+            <ul id="secondList">
+                <li>tag selectors</li>
+                <li style="color:darkgreen">id selectors</li>
+                <li>class selectors</li>
+            </ul>
+        </ul>
+
+        <div id="firstDiv">
+            <h2>Class Selectors</h2>
+            <p class="blueColor">
+                Class selectors are used to select/apply 
+                styles to multiple elements
+            </p>
+
+            <p class="blueColor bordered centerAlign">
+                Class selectors have lesser priority
+                than the id selectors
+            </p>
+
+            <p class="centerAlign bordered">
+                class selectors have higher priority than the 
+                tag selectors
+            </p>
+        </div>
+
+        <h2>Blue Color</h2>
+        <h2>Yello Color</h2>
+        <h2>Green Color</h2>
+
+        <span class="toBlock">Span 1</span>
+        <span class="toBlock">Span 2</span>
+        <span class="toBlock">Span 3</span>
+
+        <div>
+            <img src="googlelogo.png"
+                width="50px">
+        </div>
+        <div>
+            <img src="googlelogo.png"
+                width="50px">
+        </div>
+        <img src="googlelogo.png"
+            width="50px">
+        <img src="googlelogo.png"
+            width="50px">
+    </body>
+</html>

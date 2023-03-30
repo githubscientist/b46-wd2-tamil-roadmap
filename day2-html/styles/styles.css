@@ -1,0 +1,40 @@
+ul {
+    color: deepskyblue;
+}
+
+h3 {
+    text-align: center;
+}
+
+.blueColor {
+    color: blue;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.bordered {
+    border: 1px solid red;
+}
+
+#firstDiv {
+    color: brown;
+}
+
+h2 {
+    color: cornflowerblue !important;
+}
+
+/* latest rule has a highest priority */
+h2 {
+    color:crimson
+}
+
+h2 {
+    display: block;
+}
+
+.toBlock {
+    display: block;
+}
