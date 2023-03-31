@@ -1,0 +1,56 @@
+/* * {
+    color: blue;
+} */
+
+p {
+    color: rgb(227, 21, 21);
+}
+
+#firstDiv-firstPara {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.bordered {
+    border: 1px solid black;
+}
+
+input[type="email"] {
+    border: 2px solid green;
+}
+
+input[type="password"] {
+    border: 2px solid red;
+}
+
+/* a[href="https://google.com"] {
+    color: blueviolet;
+}
+
+a[id="facebook"] {
+    color: aqua;
+} */
+
+#button1:hover {
+    background-color: crimson;
+}
+
+#button1:active {
+    background-color: green;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:link {
+    text-decoration: none;
+}
+

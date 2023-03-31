@@ -1,0 +1,23 @@
+.box-outer {
+    border: 5px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box-middle {
+    border: 5px solid red;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box-inner {
+    border: 5px solid blue;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box-content {
+    border: 2px solid purple;
+    margin: 20px;
+    padding: 20px;
+}

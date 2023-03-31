@@ -1,0 +1,11 @@
+.inlineToBlock {
+    display: block;
+}
+
+.blockToInline {
+    display: inline;
+}
+
+#block3 {
+    display: none;
+}

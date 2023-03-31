@@ -28,7 +28,7 @@ h2 {
 
 /* latest rule has a highest priority */
 h2 {
-    color:crimson
+    color:crimson;
 }
 
 h2 {
